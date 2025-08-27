@@ -1,11 +1,59 @@
-# Centos
-Patch Centos
+# CentOS Patches Repository
 
-## Folder
+(Français / English)
 
-`<Centos version>/<package name>/<version>`
+## 🇫🇷 Description
 
-You can find the sources to build the package in the rpmbuild folder and the RPMs in RPMS folder.
+Ce dépôt contient des patchs et reconstructions de paquets CentOS.
+Il met à disposition :
+- les sources et fichiers de build pour reconstruire les paquets (rpmbuild/)
+- les binaires RPM déjà compilés (RPMS/)
+
+### ⚠️ Licence
+> Les paquets fournis ici conservent la licence de leurs projets d’origine (GPL, MIT, BSD, etc.).
+> Ce dépôt ne fait que les regrouper et proposer un accès simplifié. Vérifiez la licence de chaque paquet via rpm -qi <package>.
+
+## Structure du dépôt
+```sh
+<CentOS version>/<package name>/<version>/
+ ├── rpmbuild/   # sources et spec pour reconstruire le paquet
+ └── RPMS/       # binaires RPM prêts à l’emploi
+```
+
+Exemple:
+```sh
+7/libblockdev/2.30/
+├── rpmbuild/
+└── RPMS/
+```
+
+## 🇬🇧 Description  
+
+This repository contains **patches and rebuilt CentOS 7 packages**.  
+It provides:  
+- the **sources and build files** to rebuild the packages (`rpmbuild/`)  
+- the **precompiled RPM binaries** (`RPMS/`)  
+
+### ⚠️ Important 
+> The RPM packages here retain the original license of their upstream projects (GPL, MIT, BSD, etc.).  
+> This repository only redistributes them for convenience. You can check each package license with `rpm -qi <package>`.  
+
+## Repository Structure  
+
+```sh
+<CentOS version>/<package name>/<version>/
+├── rpmbuild/ # sources and spec files to rebuild the package
+└── RPMS/ # prebuilt RPM binaries
+```
+
+Example:
+```sh
+7/libblockdev/2.30/
+├── rpmbuild/
+└── RPMS/
+```
+
+---
 
 # Centos 6
 
