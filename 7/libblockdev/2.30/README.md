@@ -8,6 +8,6 @@ rpmbuild -ba ~/Centos/7/libblockdev/2.30/rpmbuild/SPECS/libblockdev.spec
 # Install
 
 ```sh
-sudo yum install ~/Centos/7/libblockdev/2.30/rpmbuild/RPMS/x84_64/*.rpm
+sudo yum localinstall ~/Centos/7/libblockdev/2.30/rpmbuild/RPMS/x84_64/*.rpm
 rpm -qa | grep libblockdev
 ```
